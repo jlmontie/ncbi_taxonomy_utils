@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+idbd_utils.egg-info/PKG-INFO
+idbd_utils.egg-info/SOURCES.txt
+idbd_utils.egg-info/dependency_links.txt
+idbd_utils.egg-info/top_level.txt
+ncbi_taxonomy_utils/__init__.py
+ncbi_taxonomy_utils/ncbi_taxonomy_all_names.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_canonical_taxa.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_children_nodes.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_max_taxid.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_merged.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_names.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_nodes_rank.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_nodes_rel.dat
+ncbi_taxonomy_utils/ncbi_taxonomy_utils.py

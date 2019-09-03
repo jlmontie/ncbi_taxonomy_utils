@@ -1,11 +1,31 @@
-# NCBI taxonomy utilities
+# IDbyDNA utilities
 
-This is a package for NCBI taxonomy utilities
+## Description
+A collection of modules created by IDbyDNA
 
-Followed example verbatim at https://packaging.python.org/tutorials/packaging-projects/
-
-To update, run ncbi_taxonomy_utils_constructor.py to generate new pickle resource files
+## Resources for building packages
+Example package build at https://packaging.python.org/tutorials/packaging-projects/
 
 Command to build: python3 setup.py sdist bdist_wheel
 
-Command to install: pip install git+https://github.com/idbydna/taxonomer.git@snakemake_dev#subdirectory=utils/ncbi_taxonomy_utils_package
+Command to install: `pip install git+<git repository url>[@branch][#subdirectory=path/to/package/directory]`
+
+To install this package:
+
+pip install git+https://github.com/idbydna/taxonomer.git@snakemake_dev#subdirectory=utils/idbd_utils
+
+### Additional hints
+To include data files in package:
+
+`include_package_data=True` in setup function in setup.py
+
+Add MANIFEST.in with `include relative/path/to/data/resource`. It is best to include the
+data resources in the same directory as the module. In the module, reference the data
+resources with the ``__file__`` property which points to where the module python script
+is stored on the local machine.
+
+More info: https://medium.com/@madumalt/python-setuptools-adding-non-code-files-to-a-package-804f9e914807
+
+## Updating
+To update, run ncbi_taxonomy_utils_constructor.py to generate new pickle resource files.
+Include these in the same directory as the module.
